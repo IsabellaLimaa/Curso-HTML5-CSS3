@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Acesse <a href="https://github.com/IsabellaLimaa" target="_blank" rel="external">meu repositório público no GitHub</a></p> <!--target="_blank" rel="external" servem para não sumir o site após clicar no link-->
+
+    <h1>Usando Links Internos</h1>
+    <p>Acesse a segunda página <a href="pag002.html" rel="next" target="_self">clicando aqui</a></p>
+    <P>Se quiser ir para a terceira página <a href="noticias/pag003.html" target="_self">clique aqui</a></P>
+    <!--target="_self" serve para não acumular várias janelas abertas ao ir clicando nos links-->
+    <!--Compensa usar a tag target="_self" em links internos, já que vc não tá saindo do seu site, agora em externos, que vc é direcionado para outro site usa a target="_blank" para não fechar o seu-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livros/Os Sete Maridos de Evelyn Hugo - Taylor Jenkins Reid.epub" download="Os Sete Maridos de Evelyn Hugo - Taylor Jenkins Reid.epub" type="application/epub+zip">Baiaxar livro em Epub</a> </li>
+        <li><a href="livros/Os Sete Maridos de Evelyn Hugo - Taylor Jenkins Reid.rar" download="Os Sete Maridos de Evelyn Hugo - Taylor Jenkins Reid.rar" type="application/zip">Baixar livro zipado</a></li>
+    </ul>
+    <!--acesssar o link https://www.iana.org/assignments/media-types/media-types.xhtml para pesquisar qual tag type é para cada tipo de arquivo, com o atalho ctrl + f para pesquisar-->
+</body>
+</html>
