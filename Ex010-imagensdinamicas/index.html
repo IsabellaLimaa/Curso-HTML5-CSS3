@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotos/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="fotos/imagem-m.png" type="image/png">
+        <img src="fotos/imagem-g.png" alt="Grande">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em Html 5.</p>
+    <!--<audio src="midia/happy-mistake.mp3" controls autoplay></audio>-->
+    <!--mp3, Wav, OGG são os padrões universais para todos navegadores-->
+
+    <audio preload="metadata" autoplay controls loop >
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav"><!--Evitar usar wav pq é mto pesado-->
+        <p>Infelizmente seu navegador não tem compatibilidade com áudio, <a href="midia/happy-mistake.mp3">clique aqui</a> para baixar o arquivo Mp3</p> <!--Vai tentar rodar os arquivos de áudio na ordem acima, e se nenhum funcionar cai nessa mensagem-->
+    </audio>
+</body>
+</html>
